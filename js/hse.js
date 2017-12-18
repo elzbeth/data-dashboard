@@ -90,11 +90,11 @@ function searchInObject(obj, string) {
   return result;
 }
 
-// var campusId = function(){
-//  var campusId = Object.keys(data);
-//  console.log('campusId');
-//  console.log(campusId);
-// };
+var campusId = function(){
+ var campusId = Object.keys(data);
+ console.log('campusId');
+ console.log(campusId);
+};
 
 // campusId();
 

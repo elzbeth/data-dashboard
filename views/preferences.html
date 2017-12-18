@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Laboratoria">
+    <meta name="keyword" content="Dashboard, Laboratoria, Students, Teachers, Centers">
+    <title>Laboratoria Preferencias - Dashboard</title>
+    <!--BOOTSTRAP-->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+    <!-- CSS -->
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/style-responsive.css" rel="stylesheet">
+  </head>
+    <body>
+
+    <header class="header black-bg">
+          <div class="sidebar-toggle-box">
+                 <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+             </div>
+           <!--logo start-->
+                      <a href="../index.html" class="logo"><img src="../assets/images/logo-horizontal.png" alt="logo-laboratoria"></a>>
+           <!--logo end-->
+           <div class="top-menu nav top-menu">
+             <ul class="nav pull-right top-menu">
+                   <li><a class="logout" href="../login.html">Logout</a></li>
+             </ul>
+           </div>
+      </header>
+     <!--header end-->
+     <!--sidebar start-->
+     <aside>
+         <div id="sidebar"  class="nav-collapse" tabindex="5000">
+             <!-- sidebar menu inicio-->
+             <ul class="sidebar-menu dcjq-accordion" id="nav-accordion">
+                  <!-- sidebar menu header-->
+                 <p class="centered"><a href="#"><img src="../assets/images/user.jpg" class="user-picture"></a></p>
+                 <h5 class="centered" id="username"><a class="user-profile" href="preferences">John Parra</a></h5>
+                 <!--menu dashboard general-->
+                 <li class="mt">
+                     <a class="active" href="../index.html">
+                         <i class="fa fa-dashboard"></i>
+                         <span>General</span>
+                     </a>
+                 </li>
+                 <!--menu campus -->
+                 <li class="sub-menu">
+                     <a href="javascript:;" >
+                         <i class="fa fa-desktop"></i>
+                         <span>Campus</span>
+                     </a>
+                     <ul class="sub">
+                         <li><a class="campusMenu" data-campusSelected='campusArequipa' href="arequipa.html">Arequipa</a></li>
+                         <li><a class="campusMenu" data-campusSelected='campusMexico' href="mexico.html">Ciudad de México</a></li>
+                         <li><a class="campusMenu" data-campusSelected='campusLima' href="lima.html">Lima</a></li>
+                         <li><a class="campusMenu" data-campusSelected='campusChile' href="chile.html">Santiago de Chile</a></li>
+                     </ul>
+                 </li>
+                 <!--menu estudiantes-->
+                 <li class="sub-menu">
+                     <a href="javascript:;" >
+                         <i class="fa fa-cogs"></i>
+                         <span>Estudiantes</span>
+                     </a>
+                     <ul class="sub">
+                       <li><a class="studentsMenu" data-studentsSelected="studentsDirectory" href="students.html">Directorio</a></li>
+                       <li><a class="studentsMenu" data-studentsSelected="studentsTech" href="tech.html">Calificaciones Tech</a></li>
+                       <li><a class="studentsMenu" data-studentsSelected="studentsHse" href="hse.html">Calificaciones HSE</a></li>
+                       <li><a class="studentsMenu" data-studentsSelected="studentsNps" href="nps.html">NPS</a></li>
+                     </ul>
+                 </li>
+                 <!--menu profesores-->
+                 <li class="sub-menu">
+                     <a href="javascript:;" >
+                         <i class="fa fa-book"></i>
+                         <span>Profesores</span>
+                     </a>
+                     <ul class="sub">
+                       <li><a class="facultyMenu" data-facultyMenu="facultyDirectory" href="faculty.html">Directorio</a></li>
+                       <li><a class="facultyMenu" data-facultyMenu="facultyDirectory" href="courses.html">Cursos</a></li>
+                       <li><a class="facultyMenu" data-facultyMenu="facultyTeachers" href="teachers.html">Profesores</a></li>
+                       <li><a class="facultyMenu" data-facultyMenu="facultyJedis" href="jedis.html">Jedis</a></li>
+                     </ul>
+                 <!--menu perfil-->
+                 <li class="sub-menu">
+                     <a href="javascript:;" >
+                         <i class="fa fa-user"></i>
+                         <span>Perfil</span>
+                     </a>
+                     <ul class="sub">
+                       <li><a class="profileMenu" data-profileMenu="profileDesktop" href="desktop.html">Escritorio</a></li>
+                       <li><a class="profileMenu" data-profileMenu="profileDesktop" href="preferences.html">Preferencias</a></li>
+                     </ul>
+                 </li>
+             </ul>
+             <!-- sidebar menu end-->
+         </div>
+     </aside>
+     <!--sidebar end-->
+
+     <!--INICIO DE FACULTY -->
+  <main>
+  <div id="generalFaculty">
+     <section id="main-content">
+         <section class="wrapper">
+             <div class="row">
+               <div>
+                 <h2 class="campus-header">PREFERENCIAS</h2>
+               </div>
+                 <div class="col-lg-12 main-chart">
+                   <div class="row mtbox">
+                  <div class="row mt">
+                    <!-- <div class=" col-lg-12 col-md-8 col-sm-6 mbg"> -->
+                      <section id="user-data">
+                        <h2 class="directory-section">Datos Usuario</h2>
+                        <form action="" method="" role="" class="user-preferences">
+                          <div>
+                            <label>Nombre de usuario</label>
+                            <input type="text" name="username" class="preference-input form-control" id="name-preference" placeholder="¿Cómo quieres que aparezca tu nombre para que todos lo vean?" data-rule="min-length:2"/>
+                            <button class="btn-preferences"><i class="fa fa-pencil"></i>Editar</button>
+                            <button class="btn-preferences"><i class="fa fa-save"></i>Guardar</button>
+                          </div>
+                          <div>
+                            <label>Contraseña</label>
+                            <input type="text" name="password" class="preference-input form-control" id="password-preference" placeholder="Mínimo 8 carácteres." data-rule="min-length:2"/>
+                            <label>Por favor confirma tu contraseña</label>
+                            <input type="text" name="password-confirm" class="searching form-control" id="confirm-pwd" placeholder="Asegurate que coincidan." data-rule="min-length:2"/>
+                          </div>
+                          <button class="btn-preferences"><i class="fa fa-pencil"></i>Editar</button>
+                          <button class="btn-preferences"><i class="fa fa-save"></i>Guardar</button>
+                          <div>
+                            <label>Correo electrónico</label>
+                            <input type="text" name="email" class="preference-input form-control" id="email-preferences" placeholder="¿Dónde podemos contactarte para recuperar tu cuenta?" data-rule="min-length:2"/>
+                            <div>
+                            <label>Por favor confirma tu correo electrónico</label>
+                            </div>
+                            <input type="text" name="email" class="preference-input form-control" id="confirm-preferences" placeholder="Solo para que no quede ninguna duda y todo coincida." data-rule="min-length:2"/>
+                            <button class="btn-preferences"><i class="fa fa-pencil"></i>Editar</button>
+                            <button class="btn-preferences"><i class="fa fa-save"></i>Guardar</button>
+                          </div>
+                        </form>
+                      </section>
+                    </div>
+                </div>
+              </div>
+            </div>
+                  <div>
+                      <section id="notifications">
+                        <h2 class="notifications-section">Notificaciones</h2>
+                          <div class="notifications-opt">
+                            <h4>Por favor elige cuando deseas recibir notificaciones en tu correo</h4>
+                          </div>
+                          <div>
+                            <p class="notification-pref">Cuando alguien responde a tus comentarios.</p>
+                            <div class="switch switch-square has-switch btn-notification" data-off-label="<i class='fa fa-times'></i>" data-on-label="<i class=' fa fa-check'></i>">
+                                <div class="switch-on switch-animate "><input type="checkbox" checked=""><span class="switch-left"><i class=" fa fa-check"></i></span><label>&nbsp;</label><span class="switch-right"><i class="fa fa-times"></i></span></div>
+                              </div>
+                          </div>
+                        <div>
+                          <p class="notification-pref">Cuando existan más de 4 intentos fallidos de iniciar sesión.</p>
+                          <div class="switch switch-square has-switch btn-notification" data-off-label="<i class='fa fa-times'></i>" data-on-label="<i class=' fa fa-check'></i>">
+                              <div class="switch-on switch-animate "><input type="checkbox" checked=""><span class="switch-left"><i class=" fa fa-check"></i></span><label>&nbsp;</label><span class="switch-right"><i class="fa fa-times"></i></span></div>
+                            </div>
+                        </div>
+                      <div>
+                        <p class="notification-pref">Cambios en tus preferencias.</p>
+                        <div class="switch switch-square has-switch btn-notification" data-off-label="<i class='fa fa-times'></i>" data-on-label="<i class=' fa fa-check'></i>">
+                            <div class="switch-on switch-animate "><input type="checkbox" checked=""><span class="switch-left"><i class=" fa fa-check"></i></span><label>&nbsp;</label><span class="switch-right"><i class="fa fa-times"></i></span></div>
+                          </div>
+                      </div>
+                    <div>
+                      <p class="notification-pref">Cuando existan actualizaciones importantes</p>
+                      <div class="switch switch-square has-switch btn-notification" data-off-label="<i class='fa fa-times'></i>" data-on-label="<i class=' fa fa-check'></i>">
+                          <div class="switch-on switch-animate "><input type="checkbox" checked=""><span class="switch-left"><i class=" fa fa-check"></i></span><label>&nbsp;</label><span class="switch-right"><i class="fa fa-times"></i></span></div>
+                        </div>
+                    </div>
+                      </section>
+                    </div>
+                </div>
+             <!-- </div>
+          </div> -->
+        </section>
+      </section>
+    </div>
+  <!--FIN DE GENERAL -->
+  <a class="support" href="terms.html">Términos y condiciones</a>
+  <a class="support" href="help.html">Ayuda y Soporte Técnico</a>
+   <!--main content end-->
+  </main>
+    <!--footer start-->
+  <section id="footer">
+     <footer class="site-footer clear">
+         <div class="text-center">
+             &copy; Laboratoria 2017
+
+             <a href="preferences.html#" class="go-top">
+                 <i class="fa fa-angle-up"></i>
+             </a>
+         </div>
+     </footer>
+  </section>
+     <!--footer end-->
+
+
+
+     <!-- Base de datos -->
+     <script src='../js/data.js'></script>
+     <!-- Aquí va tus archivos JS -->
+     <script src='../js/app.js'></script>
+     <script src='../js/arequipa.js'></script>
+     <script src='../js/chile.js'></script>
+     <script src='../js/lima.js'></script>
+     <script src='../js/mexico.js'></script>
+     <script src='../js/students.js'></script>
+     <script src='../js/tech.js'></script>
+     <script src='../js/hse.js'></script>
+     <script src='../js/nps.js'></script>
+     <script src='../js/faculty.js'></script>
+     <script src='../js/courses.js'></script>
+     <script src='../js/teachers.js'></script>
+     <script src='../js/jedis.js'></script>
+     <script src='../js/desktop.js'></script>
+     <script src='../js/preferences.js'></script>
+     <!--VENDORS-->
+     <script src="../assets/vendors/jquery.js"></script>
+     <script src="../assets/vendors/jquery-1.8.3.min.js"></script>
+     <script src="../assets/vendors/bootstrap.min.js"></script>
+     <script class="include" type="text/javascript" src="../assets/vendors/jquery.dcjqaccordion.2.7.js"></script>
+     <script src="../assets/vendors/jquery.scrollTo.min.js"></script>
+     <script src="../assets/vendors/jquery.nicescroll.js" type="text/javascript"></script>
+     <script src="../assets/vendors/jquery.sparkline.js"></script>
+     <script src="../assets/vendors/common-scripts.js"></script>
+     <script type="text/javascript" src="../assets/vendors/gritter/js/jquery.gritter.js"></script>
+     <script type="text/javascript" src="../assets/vendors/gritter-conf.js"></script>
+     <script type="text/javascript" src="../assets/vendors/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
+   	 <script src="../assets/vendors/form-component.js"></script>
+     <script src="../assets/vendors/bootstrap-switch.js"></script>
+
+
+
+
+    </body>
+</html>

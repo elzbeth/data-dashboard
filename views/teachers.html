@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Laboratoria">
+    <meta name="keyword" content="Dashboard, Laboratoria, Students, Teachers, Centers">
+    <title>Laboratoria Profesores - Dashboard</title>
+    <!--BOOTSTRAP-->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+    <!-- CSS -->
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/style-responsive.css" rel="stylesheet">
+  </head>
+    <body>
+
+    <header class="header black-bg">
+          <div class="sidebar-toggle-box">
+                 <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+             </div>
+           <!--logo start-->
+                      <a href="../index.html" class="logo"><img src="../assets/images/logo-horizontal.png" alt="logo-laboratoria"></a>
+           <!--logo end-->
+           <div class="top-menu nav top-menu">
+             <ul class="nav pull-right top-menu">
+                   <li><a class="logout" href="../login.html">Logout</a></li>
+             </ul>
+           </div>
+      </header>
+     <!--header end-->
+     <!--sidebar start-->
+     <aside>
+         <div id="sidebar"  class="nav-collapse" tabindex="5000">
+             <!-- sidebar menu inicio-->
+             <ul class="sidebar-menu dcjq-accordion" id="nav-accordion">
+                  <!-- sidebar menu header-->
+                 <p class="centered"><a href="#"><img src="../assets/images/user.jpg" class="user-picture"></a></p>
+                 <h5 class="centered" id="username"><a class="user-profile" href="preferences">John Parra</a></h5>
+                 <!--menu dashboard general-->
+                 <li class="mt">
+                     <a class="active" href="../index.html">
+                         <i class="fa fa-dashboard"></i>
+                         <span>General</span>
+                     </a>
+                 </li>
+                 <!--menu campus -->
+                 <li class="sub-menu">
+                     <a href="javascript:;" >
+                         <i class="fa fa-desktop"></i>
+                         <span>Campus</span>
+                     </a>
+                     <ul class="sub">
+                         <li><a class="campusMenu" data-campusSelected='campusArequipa' href="arequipa.html">Arequipa</a></li>
+                         <li><a class="campusMenu" data-campusSelected='campusMexico' href="mexico.html">Ciudad de México</a></li>
+                         <li><a class="campusMenu" data-campusSelected='campusLima' href="lima.html">Lima</a></li>
+                         <li><a class="campusMenu" data-campusSelected='campusChile' href="chile.html">Santiago de Chile</a></li>
+                     </ul>
+                 </li>
+                 <!--menu estudiantes-->
+                 <li class="sub-menu">
+                     <a href="javascript:;" >
+                         <i class="fa fa-cogs"></i>
+                         <span>Estudiantes</span>
+                     </a>
+                     <ul class="sub">
+                       <li><a class="studentsMenu" data-studentsSelected="studentsDirectory" href="students.html">Directorio</a></li>
+                       <li><a class="studentsMenu" data-studentsSelected="studentsTech" href="tech.html">Calificaciones Tech</a></li>
+                       <li><a class="studentsMenu" data-studentsSelected="studentsHse" href="hse.html">Calificaciones HSE</a></li>
+                       <li><a class="studentsMenu" data-studentsSelected="studentsNps" href="nps.html">NPS</a></li>
+                     </ul>
+                 </li>
+                 <!--menu profesores-->
+                 <li class="sub-menu">
+                     <a href="javascript:;" >
+                         <i class="fa fa-book"></i>
+                         <span>Profesores</span>
+                     </a>
+                     <ul class="sub">
+                       <li><a class="facultyMenu" data-facultyMenu="facultyDirectory" href="faculty.html">Directorio</a></li>
+                       <li><a class="facultyMenu" data-facultyMenu="facultyDirectory" href="courses.html">Cursos</a></li>
+                       <li><a class="facultyMenu" data-facultyMenu="facultyTeachers" href="teachers.html">Profesores</a></li>
+                       <li><a class="facultyMenu" data-facultyMenu="facultyJedis" href="jedis.html">Jedis</a></li>
+                     </ul>
+                 <!--menu perfil-->
+                 <li class="sub-menu">
+                     <a href="javascript:;" >
+                         <i class="fa fa-user"></i>
+                         <span>Perfil</span>
+                     </a>
+                     <ul class="sub">
+                       <li><a class="profileMenu" data-profileMenu="profileDesktop" href="desktop.html">Escritorio</a></li>
+                       <li><a class="profileMenu" data-profileMenu="profileDesktop" href="preferences.html">Preferencias</a></li>
+                     </ul>
+                 </li>
+             </ul>
+             <!-- sidebar menu end-->
+         </div>
+     </aside>
+     <!--sidebar end-->
+
+     <!--INICIO DE alumnas-->
+<main>
+  <div id="teachers">
+     <section id="main-content">
+         <section class="wrapper">
+             <div class="row">
+               <div>
+                 <h2 class="campus-header">PROFESORES</h2>
+               </div>
+                 <div class="col-lg-12 main-chart">
+                   <div class="row mtbox">
+                     <!---insight enrollment-->
+                     <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
+                       <div class="box1">
+                         <span class="alumni fa fa-heart"></span>
+                         <h3 id="general-enrolled">933</h3>
+                       </div>
+                      <p>Profesores en funciones</p>
+                     </div>
+                     <!--insight dropout-->
+                     <div class="col-md-2 col-sm-2 box0">
+                       <div class="box1">
+                         <span class="dropout fa fa-puzzle-piece"></span>
+                         <h3 id="general-dropout">-2</h3>
+                       </div>
+                      <p>Profesores inactivos</p>
+                     </div>
+                     <!--insight nps -->
+                     <div class="col-md-2 col-sm-2 box0">
+                       <div class="box1">
+                         <span class="happy fa fa-pencil"></span>
+                         <h3>23</h3>
+                       </div>
+                       <p id="general-nps">Promedio general profesores</p>
+                     </div>
+                     <!--insight promedio alumnas-->
+                     <div class="col-md-2 col-sm-2 box0">
+                       <div class="box1">
+                         <span class="notes fa fa-star"></span>
+                         <h3>+10</h3>
+                       </div>
+                       <p>Promedio más alto entre profesores</p>
+                     </div>
+                     <!--insight profesores-->
+                     <div class="col-md-2 col-sm-2 box0">
+                       <div class="box1">
+                         <span class="teachers fa fa-rocket"></span>
+                         <h3>10</h3>
+                       </div>
+                       <p>Nivel de satisfacción profesores</p>
+                     </div>
+                   </div><!-- /row mt -->
+                     <!--charts-->
+
+                  <div class="row mt">
+                                   <!-- Pofesores en funciones por sede -->
+                    <div class="col-md-6 col-sm-6 mbg">
+                         <div class="white-panel pn donut-chart">
+                           <div class="white-header">
+                             <h5>Profesores en funciones por sede</h5>
+                           </div>
+                           <div class="row">
+                             <div class="col-sm-6 col-xs-6 goleft">
+                               <p><i class="fa fa-database"></i> 70%</p>
+                             </div>
+                           </div>
+                           <canvas id="studentsByCenter" height="120" width="120"></canvas>
+                         </div><!--/grey-panel -->
+                       </div><!-- /col-md-4-->
+
+                                   <!-- Promedio de calificiación por sede -->
+                      <div class="col-md-6 col-sm-6 mbg">
+                           <div class="white-panel pn donut-chart">
+                             <div class="white-header">
+                               <h5>Profesores inactivos por sede</h5>
+                             </div>
+                             <div class="row">
+                               <div class="col-sm-6 col-xs-6 goleft">
+                                 <p><i class="fa fa-database"></i> 70%</p>
+                               </div>
+                             </div>
+                             <canvas id="generaldropoutlevel" height="120" width="120"></canvas>
+                           </div><!--/grey-panel -->
+                         </div><!-- /col-md-4-->
+
+                                    <!-- Satisfacción porfesores por sede -->
+                        <div class="col-md-6 col-sm-6 mbg">
+                             <div class="white-panel pn donut-chart">
+                               <div class="white-header">
+                                 <h5>Promedio alcanzado por profesores por sede</h5>
+                               </div>
+                               <div class="row">
+                                 <div class="col-sm-6 col-xs-6 goleft">
+                                   <p><i class="fa fa-database"></i> 70%</p>
+                                 </div>
+                               </div>
+                               <canvas id="generalnotesoVer" height="120" width="120"></canvas>
+                             </div><!--/grey-panel -->
+                           </div><!-- /col-md-4-->
+
+                                    <!-- Habilidad con mayor puntuación por sede-->
+                          <div class="col-md-6 col-sm-6 mbg">
+                               <div class="white-panel pn donut-chart">
+                                 <div class="white-header">
+                                   <h5>Nivel de satisfacción de profesores por sede</h5>
+                                 </div>
+                                 <div class="row">
+                                   <div class="col-sm-6 col-xs-6 goleft">
+                                     <p><i class="fa fa-database"></i> 70%</p>
+                                   </div>
+                                 </div>
+                                 <canvas id="generalnps" height="120" width="120"></canvas>
+                               </div><!--/grey-panel -->
+                             </div><!-- /col-md-4-->
+                           </div>
+<!--inicio directorio-->
+                           <div class=" col-lg-12 col-md-8 col-sm-8 mbg">
+                             <section id="alumni-directory">
+                               <h2 class="directory-section">Directorio profesores</h2>
+                               <form action="" method="" role="" class="alumni-search">
+                                 <input type="text" name="search" class="searching" id="alumni-searching" placeholder="Búsqueda" data-rule="min-length:1"/>
+                                 <button class="btn-search"><i class="fa fa-search"></i>Encuentra</button>
+                               </form>
+                               <div class="alumni-filters">
+                                 <button id="alumniFilterAll" class="btn-filter" category="all">Todos</button>
+                                 <button id="alumniFilterName" class="btn-filter" category="nombre">Nombre</button>
+                                 <button id="alumniFilterCampus" class="btn-filter" category="campus">Campus</button>
+                                 <button id="alumniFilterProm" class="btn-filter" category="generacion">Generación</button>
+                                 <button id="alumniFilterTech" class="btn-filter" category="tech">Promedio Tech</button>
+                                 <button id="alumniFilterHse" class="btn-filter" category="hse">Promedio HSE</button>
+                                 <button id="alumniFilterNps" class="btn-filter" category="nps">Especialización</button>
+                               </div>
+                               <div>
+                                 <h3 class="search-results">Resultados de la búsqueda:</h3>
+                                 <div>aqui van los resultados</div>
+                               </div>
+                             </section>
+                         </div>
+  <!--fin directorio-->
+      </div>
+    </section>
+  </section>
+  <!--FIN DE GENERAL -->
+  <a class="support" href="terms.html">Términos y condiciones</a>
+  <a class="support" href="help.html">Ayuda y Soporte Técnico</a>
+   <!--main content end-->
+  </main>
+    <!--footer start-->
+  <section id="footer">
+     <footer class="site-footer clear">
+         <div class="text-center">
+             &copy; Laboratoria 2017
+
+             <a href="students.html#" class="go-top">
+                 <i class="fa fa-angle-up"></i>
+             </a>
+         </div>
+     </footer>
+  </section>
+     <!--footer end-->
+
+
+
+
+     <!-- Base de datos -->
+     <script src='../js/data.js'></script>
+     <!-- Aquí va tus archivos JS -->
+     <script src='../js/app.js'></script>
+     <script src='../js/arequipa.js'></script>
+     <script src='../js/chile.js'></script>
+     <script src='../js/lima.js'></script>
+     <script src='../js/mexico.js'></script>
+     <script src='../js/students.js'></script>
+     <script src='../js/tech.js'></script>
+     <script src='../js/hse.js'></script>
+     <script src='../js/nps.js'></script>
+     <script src='../js/faculty.js'></script>
+     <script src='../js/courses.js'></script>
+     <script src='../js/teachers.js'></script>
+     <script src='../js/jedis.js'></script>
+     <script src='../js/desktop.js'></script>
+     <script src='../js/preferences.js'></script>
+     <!--VENDORS-->
+     <script src="../assets/vendors/jquery.js"></script>
+     <script src="../assets/vendors/jquery-1.8.3.min.js"></script>
+     <script src="../assets/vendors/bootstrap.min.js"></script>
+     <script class="include" type="text/javascript" src="../assets/vendors/jquery.dcjqaccordion.2.7.js"></script>
+     <script src="../assets/vendors/jquery.scrollTo.min.js"></script>
+     <script src="../assets/vendors/jquery.nicescroll.js" type="text/javascript"></script>
+     <script src="../assets/vendors/jquery.sparkline.js"></script>
+     <script src="../assets/vendors/common-scripts.js"></script>
+     <script type="text/javascript" src="../assets/vendors/gritter/js/jquery.gritter.js"></script>
+     <script type="text/javascript" src="../assets/vendors/gritter-conf.js"></script>
+
+
+    </body>
+</html>
