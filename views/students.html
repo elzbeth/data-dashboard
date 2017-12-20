@@ -217,8 +217,8 @@
                              </div><!-- /col-md-4-->
                            </div>
 
-
-        <div class=" col-lg-12 col-md-8 col-sm-8 mbg">
+<section>
+        <div class=" col-lg-12 col-md-12 col-sm-12 mbg mtbox">
           <section id="alumni-directory">
             <h2 class="directory-section">Directorio Alumnas</h2>
             <form action="" method="" role="" class="alumni-search">
@@ -227,25 +227,128 @@
             </form>
             <div class="alumni-filters">
               <button id="alumniFilterAll" class="btn-filter" category="all">Todas</button>
-              <button id="alumniFilterName" class="btn-filter" category="nombre">Nombre</button>
-              <button id="alumniFilterCampus" class="btn-filter" category="campus">Campus</button>
-              <button id="alumniFilterProm" class="btn-filter" category="generacion">Generación</button>
-              <button id="alumniFilterTech" class="btn-filter" category="tech">Promedio Tech</button>
-              <button id="alumniFilterHse" class="btn-filter" category="hse">Promedio HSE</button>
-              <button id="alumniFilterNps" class="btn-filter" category="nps">NPS</button>
-              <button id="alumniFilterActive" class="btn-filter" category="nps">Activas</button>
-              <button id="alumniFilterNps" class="btn-filter" category="nps">Inactivas</button>
+              <button id="alumniFilterName" class="btn-filter" category="arequipa">Arequipa</button>
+              <button id="alumniFilterCampus" class="btn-filter" category="mexico">Mexico</button>
+              <button id="alumniFilterProm" class="btn-filter" category="lima">Lima</button>
+              <button id="alumniFilterTech" class="btn-filter" category="santiago">Santiago</button>
+              <button id="alumniFilterHse" class="btn-filter" category="active">Activa</button>
+              <button id="alumniFilterHse" class="btn-filter" category="inactive">Inactiva</button>
+              <button id="alumniFilterNps" class="btn-filter" category="2017-2">2017-2</button>
+              <button id="alumniFilterNps" class="btn-filter" category="2017-1">2017-1</button>
+              <button id="alumniFilterNps" class="btn-filter" category="2016-2">2016-2</button>
+              <button id="alumniFilterNps" class="btn-filter" category="2016-1">2016-1</button>
+              <button id="alumniFilterNps" class="btn-filter" category="2015-2">2015-2</button>
+              <button id="alumniFilterNps" class="btn-filter" category="2015-1">2015-1</button>
+              <!-- <button id="alumniFilterNps" class="btn-filter" category="inactive">2014-2</button> -->
             </div>
             <div>
               <h3 class="search-results">Resultados de la búsqueda:</h3>
-              <div>aqui van los resultados</div>
+              <section id="directory-grid" class="row mt">
+                  <div class="directory-template col-lg-3 com-md-6 col-sm-6 mt">
+                    <!--avatar-->
+                    <div class="avatar">
+                      <!-- <img src="http://lorempixel.com/200/200/people/" class="foto-coder"> -->
+                      <img src="../assets/images/user-dummy5.jpg" class="directory-photo">
+                      <p class="name">LOREM IPSUM</p>
+                      <p class="campus">CAMPUS</p>
+                    </div>
+                    <!--fin avatar-->
+                    <!--info-template-->
+                    <div class="info-template 2">
+                        <h5>Generación:</h5>
+                        <p class="generation"></p>
+                        <div>
+                          <h5>Turno:</h5>
+                          <p class="turn"></p>
+                        </div>
+                        <div>
+                          <h5>Promedio Tech:</h5>
+                          <p class="averageTech"></p>
+                        </div>
+                        <div>
+                          <h5>Promedio HSE:</h5>
+                          <p class="averageHSE"></p>
+                        </div>
+                        <div>
+                           <h5>Email:</h5>
+                           <p class="email">loremipsum@loremip.sum</p>
+                        </div>
+                        <div>
+                           <h5>Status:</h5>
+                           <div  id= "btn-status" class="switch switch-square has-switch" data-off-label="<i class='fa fa-times'></i>" data-on-label="<i class=' fa fa-check'></i>">
+                               <div class="switch-on switch-animate "><input type="checkbox" checked=""><span class="switch-left"><i class=" fa fa-check"></i></span><label>&nbsp;</label><span class="switch-right"><i class="fa fa-times"></i></span></div>
+                             </div>
+                      </div>
+
+                    <!---info-template-->
+                    </div>
+              </section>
             </div>
           </section>
-
-      </div>
-      </div>
-    </section>
+        </div>
   </section>
+</div>
+
+
+
+<!---prueba meme--->
+
+<!--
+<main>
+    <h1>Laboratoria <strong> Código que transforma</strong> </h1>
+    <h2>Conoce a las coders</h2>
+    <select id="filtro" onchange ="seleccionarOpcion(event)">
+        <option >Selecciona una sede </option>
+        <option value = "cdmx5" data-sede="CDMX" data-generacion ="quinta">Ciudad de México.Quinta generación</option>
+        <option value = "cdmx4" data-sede="CDMX" data-generacion ="cuarta">Ciudad de México. Cuarta generación</option>
+        <option value = "cdmx3" data-sede="CDMX" data-generacion ="tercera">Ciudad de México. Tercera generación</option>
+        <option value = "lim1" data-sede="Lima" data-generacion ="primera">Lima, Primera Generacion</option>
+        <option value = "lim2" data-sede="Lima" data-generacion ="segunda">Lima, Segunda Generación</option>
+    </select>
+    <section id="contenedor-coders">
+       <div class="coder plantilla">
+            <img src="http://lorempixel.com/200/200/people/" class="foto-coder">
+            <p class="nombre">Patricia Hernández</p>
+            <p class="turno">AM</p>
+            <div>
+            <span class="correo">patricia.dione@gmail.com</span>
+            <span class="generacion"></span>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+<!-- fin prueba meme--> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--FIN DE GENERAL -->
   <a class="support" href="terms.html">Términos y condiciones</a>
   <a class="support" href="help.html">Ayuda y Soporte Técnico</a>
@@ -271,20 +374,6 @@
      <script src='../js/data.js'></script>
      <!-- Aquí va tus archivos JS -->
      <script src='../js/app.js'></script>
-     <script src='../js/arequipa.js'></script>
-     <script src='../js/chile.js'></script>
-     <script src='../js/lima.js'></script>
-     <script src='../js/mexico.js'></script>
-     <script src='../js/students.js'></script>
-     <script src='../js/tech.js'></script>
-     <script src='../js/hse.js'></script>
-     <script src='../js/nps.js'></script>
-     <script src='../js/faculty.js'></script>
-     <script src='../js/courses.js'></script>
-     <script src='../js/teachers.js'></script>
-     <script src='../js/jedis.js'></script>
-     <script src='../js/desktop.js'></script>
-     <script src='../js/preferences.js'></script>
      <!--VENDORS-->
      <script src="../assets/vendors/jquery.js"></script>
      <script src="../assets/vendors/jquery-1.8.3.min.js"></script>
